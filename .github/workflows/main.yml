@@ -24,9 +24,9 @@ jobs:
 
       - name: Run the Postamna Collection with Newman
         run : |
-               newman run 'Inwarranty-flow collection.postman_collection.json' \
-               -e QA.postman_environment.json \
-               - d testdata.csv \
+               newman run 'Inwarranty-flow collection.postman_collection.json'\
+               -e QA.postman_environment.json\
+               - d testdata.csv\
                -r c li,htmlextra
       
                 
