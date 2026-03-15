@@ -9,7 +9,7 @@ on:
     - cron: 00 14 * * *
 jobs:
   run-postman-test:
-    runs-on: ubuntu-latest
+    runs-on: ec2 github runner
     steps:
       - name: checkout the code
         uses: actions/checkout@v6.0.2
